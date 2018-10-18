@@ -11,13 +11,15 @@ $(document).ready(function (){
 
 
     $(".cels").on('click', function () {
+
+        $(this).removeClass("cels");
         id = $(this).attr('id');
         x = id.substr(0, id.indexOf("_"));
         //alert(x);
         y = id.substring(id.indexOf("_") + 1);
         //alert(y);
-        if ($("#" + x + "_" + y).hasClass('bomb'))
-            alert('partita persa');
+        //if ($("#" + x + "_" + y).hasClass('bomb'))
+           // alert('partita persa');
     });
 
 
@@ -43,7 +45,7 @@ function set_bomb() {
             i--;
         else {
             $("#" + x + "_" + y).addClass("bomb");
-            $("#" + x + "_" + y).text("b").css("background-color", "yellow");
+            
         }
     }
 }
