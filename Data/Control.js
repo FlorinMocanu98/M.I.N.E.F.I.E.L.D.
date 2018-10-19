@@ -12,7 +12,7 @@ $(document).ready(function (){
 
     $(".cels").on('click', function () {
 
-        $(this).removeClass("cels");
+        $(this).removeClass("cels").addClass("non_covered");
         id = $(this).attr('id');
         x = id.substr(0, id.indexOf("_"));
         //alert(x);
@@ -68,3 +68,10 @@ function shuffle(array) {
 
     return array;
 }
+
+var myTimer = setInterval(function () {
+
+
+
+
+}, 1000);

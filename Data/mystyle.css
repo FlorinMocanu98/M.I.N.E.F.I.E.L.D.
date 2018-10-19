@@ -5,23 +5,28 @@ body, #mygrid {
   }
 
 /*Stile per la grid*/
-#mygrid{
+#mygrid {
+
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
     grid-gap: 1em;
     background-color: rgb(235, 230, 230);
 }
 
 
 /*Div contenente tab con celle*/
-#tab{
-    
+#tab {
+
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 1em;
-    
+    position: relative;
 }
 
 /*Classe cella*/
@@ -62,12 +67,9 @@ td.cels:active {
 /*Style per la tabella che conterrà le celle*/
 #mytab {
 
-    
+
     border-collapse: separate;
-    /*border-spacing: 0.7px ;*/
-    height: 100%;
-    width: 100%;
-    margin: 0;
+    margin: auto;
 }
 
 /*Stile cella contenente bomba*/
@@ -78,4 +80,19 @@ td.bomb{
     background-position: center;
     background-size: 90%;
 
+}
+td.non_covered {
+    background-color: #77B6EA;
+    border: 0.5px solid #5481A5;
+}
+span {
+    font-size: 3vw;
+    color: crimson;
+    position: absolute;
+
+}
+#container_timer {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 }
