@@ -1,6 +1,8 @@
 const N_ROWS = 10;
 const N_COLUMNS = 10;
 const N_BOMBS = 12;
+
+/*  */
 $(document).ready(function (){
 
     create_tab();
