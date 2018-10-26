@@ -25,6 +25,19 @@ $(document).ready(function (){
     });
 
 
+    
+   
+        var startTimestamp = moment().startOf("day");
+        setInterval(function() {
+            startTimestamp.add(1, 'second');
+            $("#HH").text(startTimestamp.format('HH') + "  ");
+            $("#MM").text(startTimestamp.format('mm') + " ");
+            $("#SS").text(startTimestamp.format('ss'));
+        }, 1000);
+    
+    
+   
+
 });
 
 
@@ -71,9 +84,3 @@ function shuffle(array) {
     return array;
 }
 
-var myTimer = setInterval(function () {
-
-
-
-
-}, 1000);
